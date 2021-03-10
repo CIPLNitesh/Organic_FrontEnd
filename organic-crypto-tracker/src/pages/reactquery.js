@@ -54,12 +54,11 @@ function ReactQuery() {
                 )}
                 {status === "success" && (
                     <>
-                    <div className="coin-search">
-                        <Link to="/" className="link-item">Back</Link>
-                         <h1 className="coin-text">Search a currency</h1>
+                    <div className="coin-search coin-row">
                         <form>
-                        <input type="text" className="coin-input" placeholder="Search" onChange={handleChange}/>
-                        </form> 
+                            <input type="text" className="coin-input" placeholder="Search a currency" onChange={handleChange}/>
+                        </form>
+                        <Link to="/" className="link-item">Back</Link>
                     </div>
                     <div className="coin-main">
                          {/* Purpose: Implemented pagination related code to show Previous and Next page
@@ -112,7 +111,7 @@ function ReactQuery() {
                     </>
                 )}
             </div>
-            <ReactQueryDevtools initialIsOpen />
+            <ReactQueryDevtools initialIsOpen={false}/>
         </>
     )
 }

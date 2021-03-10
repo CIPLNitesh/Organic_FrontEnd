@@ -38,12 +38,11 @@ function CallAxios() {
     // Created By: CIPL
     return (
         <div className="coin-app">
-            <div className="coin-search">
-                <Link to="/" className="link-item">Back</Link>
-                <h1 className="coin-text">Search a currency</h1>
+            <div className="coin-search coin-row">
                 <form>
-                <input type="text" className="coin-input" placeholder="Search" onChange={handleChange}/>
+                    <input type="text" className="coin-input" placeholder="Search a currency" onChange={handleChange}/>
                 </form>
+                <Link to="/" className="link-item">Back</Link>
             </div>
             <div className="coin-main">
                 <div className="coin-container">
