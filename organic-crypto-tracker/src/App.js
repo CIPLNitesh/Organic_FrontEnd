@@ -8,6 +8,7 @@ import './App.css';
 // Created By: CIPL
 import Main from "./pages/main";
 import CallAxios from "./pages/axios";
+import NotFound from "./pages/404";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/axios" component={CallAxios} />
+        <Route component={NotFound} />
       </Switch>
     </Router>
   );
